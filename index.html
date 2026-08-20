@@ -20,48 +20,40 @@
     <main>
         <!-- ส่วนเลือกหมวดหมู่ -->
         <section id="categories">
-            <h2>categories</h2>
+            <h2>หมวดหมู่การ์ดเกม</h2>
             <div class="category-buttons">
-                <button class="cat-btn active" onclick="filterSelection('all', event)">all</button>
-                <button class="cat-btn" onclick="filterSelection('pokemon', event)">pokemon</button>
-                <button class="cat-btn" onclick="filterSelection('yugioh', event)">Yu-Gi-Oh</button>
-                <button class="cat-btn" onclick="filterSelection('onepiece', event)">one-piece</button>
-                <button class="cat-btn" onclick="filterSelection('accessories', event)">accessories</button>
+                <button class="cat-btn active" onclick="filterSelection('all', event)">ทั้งหมด</button>
+                <button class="cat-btn" onclick="filterSelection('pokemon', event)">โปเกมอน</button>
+                <button class="cat-btn" onclick="filterSelection('yugioh', event)">ยูกิโอ</button>
+                <button class="cat-btn" onclick="filterSelection('accessories', event)">อุปกรณ์เสริม</button>
             </div>
         </section>
 
         <!-- ส่วนแสดงสินค้า -->
         <section id="products">
-            <div class="product-grid"> <!-- แก้ไขแล้ว: เติมคำว่า div -->
-                <!-- สินค้า 1: pokemon -->
+            <div class="product-grid">
+                <!-- สินค้า 1: โปเกมอน -->
                 <div class="card filter-item pokemon">
-                    <img src="pikachu.jpg" alt="Pokemon">
-                    <h3>Pokemon</h3>
+                    <img src="https://via.placeholder.com/200x250/ffeb3b/000?text=Pokemon" alt="Pokemon">
+                    <h3>พิคาชู VMAX</h3>
+                    <p class="price">850 บาท</p>
+                    <button class="add-btn" onclick="addToCart()">เพิ่มลงตะกร้า</button>
+                </div>
+                <!-- สินค้า 2: ยูกิโอ -->
+                <div class="card filter-item yugioh">
+                    <img src="https://via.placeholder.com/200x250/3f51b5/fff?text=Yugioh" alt="Yugioh">
+                    <h3>บลูอายส์ ไวท์ดราก้อน</h3>
                     <p class="price">1,200 บาท</p>
                     <button class="add-btn" onclick="addToCart()">เพิ่มลงตะกร้า</button>
                 </div>
-                <!-- สินค้า 2: yugioh -->
-                <div class="card filter-item yugioh"> <!-- แก้ไขแล้ว: เปลี่ยนเป็น yugioh ให้ตรงกับปุ่ม -->
-                    <img src="blue-eyes-white-dragon.jpg" alt="Yu-Gi-Oh">
-                    <h3>Yu-Gi-Oh</h3>
-                    <p class="price">1,300 บาท</p>
-                    <button class="add-btn" onclick="addToCart()">เพิ่มลงตะกร้า</button>
-                </div>
-                <!-- สินค้า 3: onepiece -->
-                <div class="card filter-item onepiece"> <!-- แก้ไขแล้ว: เปลี่ยนเป็น onepiece ให้ตรงกับปุ่ม -->
-                    <img src="one-piece.jpg" alt="one-piece">
-                    <h3>one-piece</h3>
-                    <p class="price">1,500 บาท</p>
-                    <button class="add-btn" onclick="addToCart()">เพิ่มลงตะกร้า</button>
-                </div>
-                <!-- สินค้า 4: accessories -->
+                <!-- สินค้า 3: อุปกรณ์เสริม -->
                 <div class="card filter-item accessories">
-                    <img src="card-sleeves.jpg" alt="sleeves">
-                    <h3>Card-sleeves</h3>
+                    <img src="https://via.placeholder.com/200x250/9e9e9e/fff?text=Sleeves" alt="Sleeves">
+                    <h3>ซองใส่การ์ด (สีดำ)</h3>
                     <p class="price">150 บาท</p>
                     <button class="add-btn" onclick="addToCart()">เพิ่มลงตะกร้า</button>
                 </div>
-            </div> <!-- แก้ไขแล้ว: เติมแท็กปิด </div> -->
+            </div>
         </section>
 
         <hr>
